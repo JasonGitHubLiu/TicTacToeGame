@@ -103,6 +103,7 @@ function sound(src) {
 }
 var audio = document.querySelector('#myAudio')
 audio.volume = 0.2;
-audio.play()
+
 
 startGame();
+audio.play()
