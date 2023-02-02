@@ -16,12 +16,18 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     font-size: 1.5rem;
     background-color: green;
     color: white;
+    transition: transform 0.3s ease 0s;
+}
+
+#restartButton:hover{
+    transform: translateY(-10px)
+    
 }
 
 audio{
-    width: 400px;
-    height: 50px;
-    margin-top: 10vh;
+    width: 25vw;           /* 400 px */
+    height: 5vh;           /* 50px */
+    margin-top: 5vh;
 }
 
 h1{
