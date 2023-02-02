@@ -22,21 +22,20 @@ body{
     font-size: 75px;
     cursor: pointer;
 }   
-
 .cell:first-child,/* gets rid of the top border */
 .cell:nth-child(2),
 .cell:nth-child(3){
     border-top: none;
 }
 
-.cell:nth-child(3n + 1){/* gets rid of the left border */
+.cell:nth-child(3n + 1){        /* gets rid of the left border */
     border-left: none;
 }
 
-.cell:nth-child(3n + 3){ /* gets rid of the right border */
+.cell:nth-child(3n + 3){        /* gets rid of the right border */
     border-right: none;
 }
-.cell:last-child,/* gets rid of the bottom border */
+.cell:last-child,               /* gets rid of the bottom border */
 .cell:nth-child(8),
 .cell:nth-child(7){
     border-bottom: none;
