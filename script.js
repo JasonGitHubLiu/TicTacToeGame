@@ -85,7 +85,7 @@ function restartGame(){
     
 }
 
-var bgMusic = new sound('Redbone (feat. The Notorious B.I.G. & 2Pac).mp3')
+var bgMusic = new sound('Nujabes - Aruarian Dance [Pitched  Sped up].mp3')
 
 function sound(src) {
     this.sound = document.createElement("audio");

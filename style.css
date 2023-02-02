@@ -6,13 +6,13 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 #cellContainer{ /* create the tic tac toe grid */
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 225px;
+    width: 300px;
     margin: auto;
 }
 
 #restartButton{
     width: 100px;
-    height: 100px;
+    height: 50px;
     font-size: 1.5rem;
     background-color: green;
     color: white;
@@ -34,29 +34,29 @@ body{
 }
 
 .cell{
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    line-height: 75px;
-    font-size: 75px;
+    width: 100px;            /* 200px */
+    height: 100px;           /* 200px */
+    border: 5px solid;
+    line-height: 100px;      /* 200px */
+    font-size: 100px;
     cursor: pointer;
 }   
-.cell:first-child,/* gets rid of the top border */
+.cell:first-child,              
 .cell:nth-child(2),
 .cell:nth-child(3){
-    border-top: none;
+    border-top: none;           /* gets rid of the top border */
 }
 
-.cell:nth-child(3n + 1){        /* gets rid of the left border */
-    border-left: none;
+.cell:nth-child(3n + 1){        
+    border-left: none;          /* gets rid of the left border */
 }
 
-.cell:nth-child(3n + 3){        /* gets rid of the right border */
-    border-right: none;
+.cell:nth-child(3n + 3){        
+    border-right: none;         /* gets rid of the right border */
 }
-.cell:last-child,               /* gets rid of the bottom border */
+.cell:last-child,               
 .cell:nth-child(8),
 .cell:nth-child(7){
-    border-bottom: none;
+    border-bottom: none;        /* gets rid of the bottom border */
 }
 
