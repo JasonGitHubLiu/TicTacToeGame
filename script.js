@@ -33,7 +33,7 @@ function cellClicked(){
     }
 
     updateCell(this, cellIndex);
-    changePlayer();
+   // changePlayer(); //testing the x's and o's in the grid when clicked
     checkWinner();
 }
 
