@@ -85,7 +85,7 @@ function restartGame(){
     
 }
 
-var bgMusic = new sound('Cozy Coffeehouse  - An IndieFolkAcoustic Playlist  Vol. 1.mp3')
+var bgMusic = new sound('Redbone (feat. The Notorious B.I.G. & 2Pac).mp3')
 
 function sound(src) {
     this.sound = document.createElement("audio");
