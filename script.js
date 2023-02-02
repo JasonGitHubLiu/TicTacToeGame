@@ -27,7 +27,7 @@ function startGame(){
 
 function cellClicked(){
     const cellIndex = this.getAttribute('cellIndex');
-    audio.play()
+    // audio2.play()
     if(options[cellIndex] != '' || !running){
         return;
     }
@@ -91,8 +91,8 @@ function sound(src) {
     this.sound = document.createElement("audio");
     this.sound.src = src;
     this.sound.setAttribute("preload", "auto");
-    this.sound.setAttribute("controls", "none");
-    this.sound.style.display = "none";
+    this.sound.setAttribute("controls", "true");
+    // this.sound.style.display = "none";
     document.body.appendChild(this.sound);
     this.play = function () {
         this.sound.play();
@@ -103,5 +103,6 @@ function sound(src) {
 }
 var audio = document.querySelector('#myAudio')
 audio.volume = 0.2;
+audio.play()
 
 startGame();
