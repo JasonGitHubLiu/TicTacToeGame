@@ -17,7 +17,6 @@ let currentPlayer = 'X';
 let running = false; 
 
 
-startGame();
 
 function startGame(){
     cells.forEach(cell => cell.addEventListener('click', cellClicked))
@@ -28,7 +27,7 @@ function startGame(){
 
 function cellClicked(){
     const cellIndex = this.getAttribute('cellIndex');
-    
+    audio.play()
     if(options[cellIndex] != '' || !running){
         return;
     }
@@ -83,4 +82,26 @@ function restartGame(){
     statusText.textContent = `${currentPlayer}'s turn`;
     cells.forEach(cell => cell.textContent = '');
     running = true;
+    
 }
+
+var bgMusic = new sound('Cozy Coffeehouse  - An IndieFolkAcoustic Playlist  Vol. 1.mp3')
+
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function () {
+        this.sound.play();
+    }
+    this.stop = function () {
+        this.sound.pause();
+    }
+}
+var audio = document.querySelector('#myAudio')
+audio.volume = 0.2;
+
+startGame();

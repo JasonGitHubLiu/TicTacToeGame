@@ -28,7 +28,9 @@ font-size: 1.5rem;
 
 body{
     /* background-color: grey; */
-    background-image: radial-gradient(red, green, blue);
+    /* background-image: radial-gradient(red, green, blue); */
+    background-image: url('/images/sea-edge.png');
+    background-size: cover;
 }
 
 .cell{
