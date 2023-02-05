@@ -34,4 +34,4 @@ When adding the option to play music while playing the game, I ran into some iss
 
 Unsolved Problems
 
-I was not able to figure out how to resize the cells according to the person's window size. For example, not everyone has the same size monitor. So depending on how big or small their monitor is, I wanted the tic tac toe board to resize itself. However, I ran into issues of the grid splitting up whenever I would try to use VW or VH for the width/height of the cell class.
+I was not able to figure out how to resize the cells according to the person's window size. For example, not everyone has the same size monitor. So depending on how big or small their monitor is, I wanted the tic tac toe board to resize itself. However, I ran into issues of the grid splitting up whenever I would try to use VW or VH for the width/height of the cell class. In the liver server, the audio does not automatically start playing, however, the published web app automatically starts playing the music as soon as you open up the link. That was not a problem at first, but it may be a github issue.
